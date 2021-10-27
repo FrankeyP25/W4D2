@@ -3,11 +3,11 @@ require_relative "board.rb"
 
 module Slideable
     DIAGONAL_DIRS = [
-        [-1, -1], [+1, +1]
+        [-1, -1], [+1, +1],
         [+1, -1], [-1, +1]
     ]
     HORIZONTAL_DIRS = [
-        [-1, 0], [+1, 0]
+        [-1, 0], [+1, 0],
         [0, -1], [0, +1]
     ]
 
@@ -22,7 +22,7 @@ module Slideable
     def moves
     end
 
-    private
+    # private
     def move_dirs #overwritten by subclass
     end
 
@@ -36,6 +36,7 @@ module Slideable
             new_arr << new_pos
             current_pos = new_pos
         end
+        new_arr
     end
 end
 
