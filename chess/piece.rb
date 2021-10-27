@@ -19,6 +19,7 @@ class Piece
     end
 
     def pos=(val)
+        @board[@pos] = val
     end
 
     def symbol
